@@ -1,0 +1,26 @@
+{
+  "name": "uijs",
+  "version": "1.0.0",
+  "description": "Generate UI components programmatically",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ioncakephper/uijs.git"
+  },
+  "author": {
+    "email": "shytiger@yahoo.com",
+    "name": "Ion Gireada"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ioncakephper/uijs/issues"
+  },
+  "homepage": "https://github.com/ioncakephper/uijs#readme",
+  "dependencies": {
+    "camel-case": "^4.1.2",
+    "hbsr": "^1.0.9"
+  }
+}
