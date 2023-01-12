@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Class: UiField</title>
+    <title>JSDoc: Class: UiTextField</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Class: UiField</h1>
+    <h1 class="page-title">Class: UiTextField</h1>
 
     
 
@@ -28,9 +28,9 @@
 
 <header>
     
-        <h2><span class="attribs"><span class="type-signature"></span></span>UiField<span class="signature">(options<span class="signature-attributes">opt</span>, items<span class="signature-attributes">opt</span>, choices<span class="signature-attributes">opt</span>, required<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h2>
+        <h2><span class="attribs"><span class="type-signature"></span></span>UiTextField<span class="signature">(options<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h2>
         
-            <div class="class-description">A class that represents a field in the UI.</div>
+            <div class="class-description">A text field that can be used in a UI.</div>
         
     
 </header>
@@ -45,7 +45,7 @@
     
 
     
-    <h4 class="name" id="UiField"><span class="type-signature"></span>new UiField<span class="signature">(options<span class="signature-attributes">opt</span>, items<span class="signature-attributes">opt</span>, choices<span class="signature-attributes">opt</span>, required<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="UiTextField"><span class="type-signature"></span>new UiTextField<span class="signature">(options<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
     
 
     
@@ -53,7 +53,7 @@
 
 
 <div class="description">
-    Creates an instance of UiField.
+    Creates an instance of UiTextField.
 </div>
 
 
@@ -125,310 +125,7 @@
                 </td>
             
 
-            <td class="description last">the options for the UiField.
-                <h6>Properties</h6>
-                
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-        <th>Attributes</th>
-        
-
-        
-        <th>Default</th>
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>label</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-                <td class="default">
-                
-                    'No label'
-                
-                </td>
-            
-
-            <td class="description last">the label for the field.</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>type</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-                <td class="default">
-                
-                    'text'
-                
-                </td>
-            
-
-            <td class="description last">the type of the field.</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>name</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-                <td class="default">
-                
-                    'noLabel'
-                
-                </td>
-            
-
-            <td class="description last">the name of the field.</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>useTemplateFile</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">boolean</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-                <td class="default">
-                
-                    true
-                
-                </td>
-            
-
-            <td class="description last">whether the field uses a template file.</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-            </td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>items</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Array.&lt;<a href="UiField.html">UiField</a>></span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-                <td class="default">
-                
-                    []
-                
-                </td>
-            
-
-            <td class="description last">items of current field.</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>choices</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Array.&lt;<a href="global.html#LabelValueChoice">LabelValueChoice</a>></span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-                <td class="default">
-                
-                    []
-                
-                </td>
-            
-
-            <td class="description last">choices of label/value pairs.</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>required</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">boolean</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-                <td class="default">
-                
-                    false
-                
-                </td>
-            
-
-            <td class="description last">whether the field is required on the form.</td>
+            <td class="description last">the options for the UiTextField.</td>
         </tr>
 
     
@@ -469,7 +166,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="ui-field.js.html">ui-field.js</a>, <a href="ui-field.js.html#line15">line 15</a>
+        <a href="ui-standard-fields.js.html">ui-standard-fields.js</a>, <a href="ui-standard-fields.js.html#line7">line 7</a>
     </li></ul></dd>
     
 
@@ -503,6 +200,17 @@
     </div>
 
     
+        <h3 class="subsection-title">Extends</h3>
+
+        
+
+
+    <ul>
+        <li><a href="UiField.html">UiField</a></li>
+    </ul>
+
+
+    
 
     
 
@@ -510,7 +218,7 @@
         <h3 class="subsection-title">Classes</h3>
 
         <dl>
-            <dt><a href="UiField.html">UiField</a></dt>
+            <dt><a href="UiTextField.html">UiTextField</a></dt>
             <dd></dd>
         </dl>
     
@@ -632,6 +340,11 @@
 
     
 
+    
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="UiField.html#createRenderer">UiField#createRenderer</a>
+    </li></ul></dd>
     
 
     
@@ -792,6 +505,11 @@
     
 
     
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="UiField.html#defaultVariables">UiField#defaultVariables</a>
+    </li></ul></dd>
+    
 
     
 
@@ -901,6 +619,11 @@
 
     
 
+    
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="UiField.html#getContentRenderer">UiField#getContentRenderer</a>
+    </li></ul></dd>
     
 
     
@@ -1012,6 +735,11 @@
     
 
     
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="UiField.html#getTemplateFilename">UiField#getTemplateFilename</a>
+    </li></ul></dd>
+    
 
     
 
@@ -1121,6 +849,11 @@
 
     
 
+    
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="UiField.html#getTemplateString">UiField#getTemplateString</a>
+    </li></ul></dd>
     
 
     
@@ -1281,6 +1014,11 @@
     
 
     
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="UiField.html#getValue">UiField#getValue</a>
+    </li></ul></dd>
+    
 
     
 
@@ -1378,6 +1116,11 @@
 
     
 
+    
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="UiField.html#getWrapperRenderer">UiField#getWrapperRenderer</a>
+    </li></ul></dd>
     
 
     
@@ -1489,6 +1232,11 @@
     
 
     
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="UiField.html#getWrapperTemplateFilename">UiField#getWrapperTemplateFilename</a>
+    </li></ul></dd>
+    
 
     
 
@@ -1598,6 +1346,11 @@
 
     
 
+    
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="UiField.html#getWrapperTemplateString">UiField#getWrapperTemplateString</a>
+    </li></ul></dd>
     
 
     
@@ -1758,6 +1511,11 @@
     
 
     
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="UiField.html#render">UiField#render</a>
+    </li></ul></dd>
+    
 
     
 
@@ -1867,6 +1625,11 @@
 
     
 
+    
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="UiField.html#usesTemplateFile">UiField#usesTemplateFile</a>
+    </li></ul></dd>
     
 
     
@@ -2026,6 +1789,11 @@
 
     
 
+    
+    <dt class="tag-overrides">Overrides:</dt>
+    <dd class="tag-overrides"><ul class="dummy"><li>
+        <a href="UiField.html#variables">UiField#variables</a>
+    </li></ul></dd>
     
 
     
